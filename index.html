@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study With Me</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <h1>Study</h1>
+      <a class="btn btn-outline" href="#join">Join now</a>
+    </nav>
+
+    <div class="hero-content">
+      <p class="tag">Free learning community</p>
+      <h2>Study with me for free.</h2>
+      <p>
+        Build better habits, share goals, and stay motivated with a friendly
+        study crew.
+      </p>
+      <div class="actions">
+        <a class="btn" href="#join">Get started</a>
+        <a class="btn btn-outline" href="#features">See features</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="features" class="section">
+      <h3>Why you'll love it</h3>
+      <div class="cards">
+        <article class="card">
+          <h4>Pomodoro timer</h4>
+          <p>Focus in short, productive sessions with built-in timing support.</p>
+        </article>
+        <article class="card">
+          <h4>Study rooms</h4>
+          <p>Find peers studying the same subjects and stay accountable together.</p>
+        </article>
+        <article class="card">
+          <h4>Progress tracking</h4>
+          <p>Keep your momentum with streaks and simple weekly goals.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="join" class="section join">
+      <h3>Start your next session</h3>
+      <form class="join-form" id="joinForm">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required />
+
+        <label for="subject">Subject</label>
+        <input id="subject" name="subject" type="text" placeholder="What are you studying?" required />
+
+        <button type="submit" class="btn">Save my session</button>
+      </form>
+      <p id="message" class="message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with focus and consistency.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
